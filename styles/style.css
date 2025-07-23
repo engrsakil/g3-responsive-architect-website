@@ -6,3 +6,80 @@
   font-weight: 400;
   font-style: normal;
 }
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.primary-color-dark-1{
+    color: #131313;
+}
+.primary-color-dark-2{
+    color: #424242;
+}
+.primary-color-dark-3{
+
+}
+.primary-btn-color{
+    background-color: #FF900E;
+}
+.bg-color-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* Navbar Relative styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.Brand-name{
+    font-weight: 700;
+    font-size: 2.8rem;
+
+}
+.nav-items{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 400;
+    font: 20px;
+}
+.navbar, .banner-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Banner relative styles */
+.banner{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.primary-btn{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+    margin-top: 30px;
+}
+.banner-image{
+    max-width: 100%;
+}
+
+/* Responsive media query */
+
+@media screen and (max-width: 567px){
+    .navbar, .nav-menu{
+        flex-direction: column;
+    }
+}
