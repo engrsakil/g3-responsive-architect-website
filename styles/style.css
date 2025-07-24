@@ -25,6 +25,17 @@
 .bg-color-light{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.bg-color-white{
+    background-color: #FFFFFF;
+}
+.heading-styles{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.description-styles{
+    font-weight: 400;
+    font-size: 1rem;
+}
 /* Navbar Relative styles */
 .navbar{
     justify-content: space-between;
@@ -109,10 +120,159 @@ main{
     font-weight: 400;
     font-size: 1rem;
 }
+
+/* features section relative styles */
+.features-container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.features-container img{
+    width: 100%;
+}
+.features{
+    margin-top: 100px;
+}
+.features-section {
+      display: flex;
+      align-items: center;
+      
+    }
+
+    .line {
+      width: 4px;
+      height: 80px;
+      background-color: orange;
+      margin-right: 15px;
+    }
+
+    .heading {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+    .features-description{
+        font-weight: 400;
+        font-size: 1rem;
+         max-width: 580px;
+    }
+
+    .dexktop-mobile-conainer{
+        margin-top: 30px;
+        border-radius: 8px;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        max-width: 580px;
+        padding: 15px;
+        margin-right: 40px;
+    }
+    .features-btn{
+            color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: none;
+    padding: 40px 45px;
+    margin-top: 30px;
+    }
+    #features-btn-title{
+        font-weight: 800;
+        font-weight: 4rem;
+    }
+    .features-btn-descip{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .btn-container{
+        display: flex;
+        position:relative;
+        left: 45%;
+        bottom: 100px;
+        max-width: 340px;
+    }
+
+    /* Some Facts relative styles */
+
+    .some-facts-title{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .some-facts-description{
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 540px;
+    }
+
+    /* Awards Winnings Relatives styles */
+    .awards-contianer{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .awards-number{
+        font-weight: 800;
+        font: 2.81rem;
+    }
+    .awards-descrip{
+        font-weight: 700;
+        font: 1rem;
+    }
+    .ribon-container , .project-container , .customer-container , .email-container{
+        width: 150px;
+        border: 1px solid #FF900E;
+        padding: 30px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    /* Our Sponsors Relative styles */
+    .our-sponsors-title{
+        margin-top: 150px;
+        margin-right: 10px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .our-sponspors-descrip{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 540px;
+        font-weight: 400;
+        font: 1rem;
+    }
+
+    /* footer icons relative styles */
+    .icons-container{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .icons-container img{
+        filter: grayscale(100%);
+    }
+
+    /* Copyright Section Styles */
+    .copyright-container{ 
+        max-width: 1440px;
+        height: 60px;
+        margin: 0 auto;
+        background-color: #FFF4E7;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        
+    }
+    .copyright-end{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
 /* Responsive media query */
 
 @media screen and (max-width: 567px){
-    .navbar, .nav-menu{
+    .navbar, .nav-menu, .features-container, .awards-contianer, .icons-container{
         flex-direction: column;
     }
     .team-container{
@@ -124,5 +284,22 @@ main{
     .team-features{
         margin: 0 auto;
     }
+    .btn-container{
+        position: relative;
+        left: 0px;
+    }
+.dexktop-mobile-conainer{
+    margin: 0px;
+}
+.awards-contianer{
+    gap: 30px;
+}
+.icons-container{
+    gap: 30px;
+    text-align: center;
+}
+.copyright-end{
+    text-align: center;
+}
 
 }
