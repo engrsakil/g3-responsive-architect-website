@@ -269,11 +269,14 @@ main{
         font-weight: 400;
         font-size: 1.2rem;
     }
-/* Responsive media query */
+/* Responsive media query Smallar devices */
 
-@media screen and (max-width: 567px){
+@media screen and (max-width: 576px){
     .navbar, .nav-menu, .features-container, .awards-contianer, .icons-container{
         flex-direction: column;
+    }
+    .nav-menu{
+        gap: 20px;
     }
     .team-container{
         flex-direction: column;
@@ -301,5 +304,48 @@ main{
 .copyright-end{
     text-align: center;
 }
+}
+
+/* Media qurey mediam devices */
+@media screen and (min-width: 576px) and (max-width: 982px) {
+        .navbar, .nav-menu, .features-container, .awards-contianer, .icons-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+       .nav-menu{
+        gap: 20px;
+    }
+    .team-container{
+        flex-direction: column;
+    }
+    .features-container img{
+        width: 200%;
+        height: 100%;
+        object-fit: cover; 
+        border-radius: 8px;
+    }
+    .btn-container{
+        position: relative;
+        left: 40%;
+        bottom: 0;
+    }
+    .some-facts-title{
+        text-align: center;
+    }
+    .some-facts-description{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .awards-contianer{
+        display: flex;
+        gap: 20px;
+    }
+    .icons-container div{
+        grid-template-columns: repeat(2, 2fr);
+        text-align: center;
+    }
+    .figma-contianer{
+        margin-left: 80%;
+    }
 
 }
